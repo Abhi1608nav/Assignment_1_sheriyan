@@ -29,6 +29,8 @@
             border-radius: 12.5%;
         }
         img{
+            width:1200px;
+            height:600; 
             object-fit: fill;
             box-shadow: 8px 8px 4px rgb(231, 116, 22);
             border-radius: 4px 4px ;
@@ -64,7 +66,43 @@
             flex-direction: column;
         }
 
-        
+        @media screen and (max-width:440px) {
+            
+            section{
+                width: 85%;
+                height: auto;
+            }
+
+            img{
+            width: 90%;
+            height: 200px;
+            object-fit: fill;
+            box-shadow: 8px 8px 4px rgb(231, 116, 22);
+            border-radius: 4px 4px ;
+            margin-left:12px;
+            }
+
+        }
+
+        @media screen and (min-width:440px) and (max-width:1280px) {
+            
+            section{
+                width: 85%;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            img{
+            width: 80%;
+            height: auto;
+            object-fit: contain;
+            box-shadow: 8px 8px 4px rgb(231, 116, 22);
+            border-radius: 4px 4px ;
+            margin: 0px auto;
+            }
+
+        }
 
     </style>
 </head>
@@ -86,7 +124,7 @@
         <h3> VastuVilla : A all in one RealEstate solution</h3>
         <p>The VastuVilla website is a best place for both the seller and buyer . In this website the user can easily list their listing on this platform and can easily manage them by creating a listing for renting / selling the property. The user can filter out the listing on the basis of a rent/sell , furnished , parking , no. of bath , no. of bed and price </p>
         <p>The user can edit its own listing in easy manner and also can communicate with the person through built in email functionality. The website is optimised for heavy user traffic which leads to give a good user interaction .</p>
-        <img src="listing page.png" width="1200" height="600" />
+        <img src="listing page.png" />
         <div>
             <h4>Tech Stack used :</h4>
             <ul>
@@ -110,7 +148,7 @@
         <!-- <p>The user can edit its own listing in easy manner and also can communicate with the person through built in email functionality. The website is optimised for heavy user traffic which leads to give a good user interaction .</p>
           -->
         
-        <img src="Screenshot 2024-09-04 230805.png" width="1200" height="600" />
+        <img src="Screenshot 2024-09-04 230805.png"  />
         <div>
              <h4>Tech Stack used :</h4>
             <ul>
