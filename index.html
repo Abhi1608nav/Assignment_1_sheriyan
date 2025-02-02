@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,500;1,500&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        
+        body{
+            font-family:'Poppins',serif ;
+            background: linear-gradient(rgb(220, 169, 61),rgb(216, 219, 134)); 
+            box-sizing: border-box;
+            transition: ease-out 1s;   
+            scroll-behavior: smooth;
+        }
+        a{
+           padding: 4px;
+           text-decoration: none;
+           color: blue;
+           color: inherit;
+           
+        }
+        a:hover{
+            background-color: rgb(231, 116, 22);
+            border-radius: 12.5%;
+        }
+        img{
+            object-fit: fill;
+            box-shadow: 8px 8px 4px rgb(231, 116, 22);
+            border-radius: 4px 4px ;
+        }
+        footer{
+            text-align: center;
+            
+        }
+        #rec{
+            font-weight: 300;
+            font-size: 32px;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+        }
+        section{
+            padding: 0px 20px 20px 20px;
+            margin-top: 18px;
+            box-shadow: 4px 4px 4px rgb(154, 140, 140);
+            border-radius: 4px 4px;
+            width: calc(90%);
+            height: auto;
+            background-color: rgb(255, 149, 0);
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>My Awesome Blogs</h1>
+        <div>
+        <a href="#blog1">Blog1 </a>
+        <a href="#blog2">Blog2</a>
+        </div>
+         
+    </nav>
+    <div class="main">
+
+    
+
+    <section id="blog1">
+        <h1>My First Blog </h1>
+        <h3> VastuVilla : A all in one RealEstate solution</h3>
+        <p>The VastuVilla website is a best place for both the seller and buyer . In this website the user can easily list their listing on this platform and can easily manage them by creating a listing for renting / selling the property. The user can filter out the listing on the basis of a rent/sell , furnished , parking , no. of bath , no. of bed and price </p>
+        <p>The user can edit its own listing in easy manner and also can communicate with the person through built in email functionality. The website is optimised for heavy user traffic which leads to give a good user interaction .</p>
+        <img src="listing page.png" width="1200" height="600" />
+        <div>
+            <h4>Tech Stack used :</h4>
+            <ul>
+                <li>ReactJs</li>
+                <li>Redux-Toolkit</li>
+                <li>TailwindCSS</li>
+                <li>MongoDB</li>
+                <li>Nodejs</li>
+                <li>Multer</li>
+                <li>Firebase</li>
+                <li>ExpressJs</li>
+                
+            </ul>
+        </div>
+
+    </section>
+    <section id="blog2">
+        <h1>My Second Blog </h1>
+        <h3> RealEstate : Best Chatting website </h3>
+        <p>WhisperWave is a feature-rich real-time chat application that enables seamless communication between users. It allows users to sign up, create profiles, chat with individuals via usernames or Gmail, form multi-participant channels, and share files effortlessly. The app is designed with an intuitive UI and robust backend, ensuring a secure and engaging messaging experience. </p>
+        <!-- <p>The user can edit its own listing in easy manner and also can communicate with the person through built in email functionality. The website is optimised for heavy user traffic which leads to give a good user interaction .</p>
+          -->
+        
+        <img src="Screenshot 2024-09-04 230805.png" width="1200" height="600" />
+        <div>
+             <h4>Tech Stack used :</h4>
+            <ul>
+                <li>Frontend: ReactJS, ShadCN, TailwindCSS</li>
+                    <li>  State Management: Zustand</li>
+                    <li>  Backend: Node.js, Express.js, Socket.io</li>
+                    <li>  Database: MongoDB</li>
+                    <li>  Authentication: JWT</li>
+                    <li>  File Handling: Multer</li>
+            </ul>
+            <h4>Features:</h4>
+            <ul>
+                <li>✅ User Authentication – Secure login and signup using JWT authentication.</li>
+                <li>  ✅ Real-time Messaging – Powered by Socket.io for instant message delivery.</li>
+                <li>  ✅ Real-time Messaging – Powered by Socket.io for instant message delivery.</li>
+                <li>  ✅ Multi-user Channels – Create and manage group conversations.</li>
+                <li>  ✅ File Sharing – Send and receive any file format, including images, documents, and videos.</li>
+                <li>  ✅ Search & Invite – Find users easily via username/Gmail and invite them to channels.</li>
+                <li>   ✅ Emoji Support – Make chats more engaging with emojis.</li>
+                <li>   ✅ Downloadable Files – Users can download received files directly from the chat.</li>
+            </ul>
+        </div>
+    </section>
+
+</div>
+
+    <footer>
+        <hr>
+        <p>Made with &hearts; | Be yourself </p>
+        
+    </footer>
+    
+
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
+</body>
+</html>
